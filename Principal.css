@@ -72,28 +72,6 @@
 }
 
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    .bienvenidos .contenedor {
-        padding: 15px;
-    }
-
-    .bienvenidos h2 {
-        font-size: 2rem;
-    }
-
-    .bienvenidos .subtitulo {
-        font-size: 1.4rem;
-    }
-
-    .bienvenidos p, .bienvenidos h3 {
-        font-size: 1rem;
-    }
-
-    .bienvenidos .servicios li {
-        font-size: 1rem;
-    }
-}
 
 .experiencia-container {
     position: relative; /* Necesario para posicionar el pseudo-elemento */
@@ -212,38 +190,54 @@
 }
 
 @media screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box; /* Asegura que el padding y los bordes no se sumen al ancho total */
+    }
+
     .bienvenidos .contenedor {
         min-height: 250px;
-        background-attachment: scroll; /* Evita problemas con imágenes fijas en móviles */
         background-size: cover;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
     }
 
     .bienvenidos h2 {
         font-size: 2.5rem;
+        margin: 0;
     }
 
     .bienvenidos .subtitulo, .bienvenidos p, .bienvenidos h3 {
         font-size: 1.2rem;
-        margin: 20px;
+        margin: 0;
+        padding: 0;
+        word-wrap: break-word; /* Asegura que el texto no salga del contenedor */
     }
 
     .divP {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 0;
+        padding: 0 20px;
+        width: 100%;
     }
 
     .botonPresupuesto {
-        margin: 20px auto; /* Centrar en pantallas pequeñas */
-        width: 80%;
+        margin: 20px auto;
+        width: 90%;
     }
 
     .NuestrosServicios {
         flex-direction: column;
-        gap: 30px; /* Reduce el espacio entre elementos */
+        width: 100vw;
+        padding: 0 20px;
     }
 
     .servicio {
-        max-width: 100%; /* Ocupa el ancho completo en móviles */
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box; /* Asegura que la imagen no sobrepase el borde */
     }
 
     .servicios-container h3 {
@@ -251,18 +245,91 @@
     }
 
     .experiencia-container {
-        padding: 40px;
+        padding: 20px;
         background-position: center;
     }
 
     .contenedor, .experiencia-container, .NuestrosServicios {
-        width: 100vw; /* Usa el 100% del viewport */
-        padding: 10px; /* Ajusta el padding */
+        width: 100vw;
+        margin: 0;
     }
 
     .divP {
-        margin: 0 auto; /* Centra el contenido */
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .bienvenidos .contenedor {
+        min-height: 250px;
+        background-size: cover;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .bienvenidos h2 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .bienvenidos .subtitulo, .bienvenidos p, .bienvenidos h3 {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+        word-wrap: break-word;
+    }
+
+    .divP {
+        margin: 0;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .botonPresupuesto {
+        margin: 20px auto;
         width: 90%;
+    }
+
+    .NuestrosServicios {
+        flex-direction: column;
+        gap: 30px;
+        width: 100vw;
+        padding: 0 10px;
+    }
+
+    .servicio {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: start;
+        text-align: start;
+        align-items: start;
+    }
+
+
+    .servicios-container h3 {
+        font-size: 1.8rem;
+    }
+
+    .experiencia-container {
+        padding: 15px;
+        background-position: center;
+    }
+
+    .contenedor, .experiencia-container, .NuestrosServicios {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .divP {
+        margin: 0;
+        width: 100%;
     }
 }
 

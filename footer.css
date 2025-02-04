@@ -2,10 +2,11 @@
     background-color: #0B438C;
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Separa los elementos */
+    justify-content: center; /* Separa los elementos */
     align-items: center;
     padding: 15px 50px; /* Ajusta el espaciado */
     box-sizing: border-box;
+    align-items: center;
 }
 
 /* Ajustes para pantallas pequeñas */
@@ -34,10 +35,11 @@
 @media (max-width: 480px) {
     .footer {
         padding: 10px;
+        font-size: 10vw;
     }
 
     .opcionesFooter {
-        font-size: 5vw;
+        font-size: 10vw;
     }
 
     .redes {
@@ -53,6 +55,7 @@
     font-size: 2vw;
     font-weight: bold;
     color: white;
+    justify-content: center;
 }
 
 .redes {

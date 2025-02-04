@@ -3,8 +3,7 @@
     align-items: center;
     height: 100px;
     background-color: #0B438C;
-    padding: 0;
-    margin: 0;
+    justify-content: center;
 }
 
 .encabezado {
@@ -14,6 +13,7 @@
     font-size: 14px;
     font-weight: bold;
     padding: 10px;
+    justify-content: center;
 }
 
 .encabezado:hover {
@@ -22,6 +22,10 @@
 
 .opciones {
     position: relative;
+    display: flex;
+    justify-content: center; /* Centra los botones dentro */
+    margin-right: 5%;
+    flex-grow: 1; /* Permite que ocupe más espacio y se mantenga centrado */
 }
 
 /* Estilo del botón en pantallas grandes (ocultamos el dropdown en pantallas grandes) */
@@ -32,7 +36,7 @@
 /* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
     .conteiner {
-        height: 80px;
+        height: 100px;
     }
 
     .encabezado {
@@ -93,11 +97,11 @@
 /* Media queries para pantallas más pequeñas */
 @media (max-width: 480px) {
     .conteiner {
-        height: 70px;
+        height: 90px;
     }
 
     .encabezado {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .dropdown-btn {
