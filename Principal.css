@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.bienvenidos {
+    background-color: #f4f4f4;
+    font-family: "Montserrat", sans-serif;
+}
+
+.bienvenidos .contenedor {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    min-height: 350px;
+    background-color: rgba(255, 255, 255, 0.0);
+    background-image: url(Porton\ Oscuro.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay; /* Mezcla el color con la imagen */
+}
+
+.bienvenidos h2 {
+    font-size: 3.5em;;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.bienvenidos .subtitulo {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 40px;
+
+}
+
+.bienvenidos p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 40px;
+    text-align: center;
+}
+
+.servicios-container h3 {
+    font-size: 1.6rem;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.bienvenidos .servicios {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.bienvenidos .servicios li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.bienvenidos a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bienvenidos a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .bienvenidos .contenedor {
+        padding: 15px;
+    }
+
+    .bienvenidos h2 {
+        font-size: 2rem;
+    }
+
+    .bienvenidos .subtitulo {
+        font-size: 1.4rem;
+    }
+
+    .bienvenidos p, .bienvenidos h3 {
+        font-size: 1rem;
+    }
+
+    .bienvenidos .servicios li {
+        font-size: 1rem;
+    }
+}
+
+.experiencia-container {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    background-image: url('porton-automatico-corredizo.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center bottom -120px;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 60px 120px 120px 120px;
+    font-family: "Montserrat", sans-serif;    z-index: 1; /* Para que el contenido esté por encima */
+}
+
+.experiencia-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro semitransparente */
+    z-index: -1; /* Detrás del contenido */
+}
+
+.contenido h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    
+}
+
+.contenido p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.divP{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.contenido h1 {
+    font-size: 3.5rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.servicios-container {
+    background-color: #fffff3;
+    background-size: cover; /* Ajusta para cubrir el área */
+    background-position: center bottom; /* Posición vertical ajustada */
+    background-repeat: no-repeat; /* Sin repetición */
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 30px;
+    font-family: "Montserrat", sans-serif;    position: relative;
+}
+
+
+.servicios li {
+    margin-bottom: 10px; /* Espaciado entre los elementos */
+}
+
+.botonPresupuesto {
+    margin-left: 45%;
+    background-color: #99CC01;
+    border: 1px solid black; /* Agregué un color para que el borde sea visible */
+    padding: 0.5rem; /* Usa rem en lugar de px */
+    width: 10rem; /* Tamaño fijo en relación al texto base */
+    text-align: center; /* Asegura que el texto esté centrado */
+    cursor: pointer; /* Hace que el cursor sea de tipo botón */
+
+}
+
+.botonPresupuesto:hover {
+    background-color: #D2FF4D; /* Cambia el fondo al pasar el mouse */
+}
+
+.botonPresupuesto p:hover {
+    color: #000000; /* Cambia el color del texto */
+}
+
+.botonPresupuesto p {
+    text-decoration: none; /* Elimina el subrayado */
+    color: rgb(255, 255, 255); /* Color del texto inicial */
+    margin: 0; /* Evita márgenes no deseados */
+}
+
+.botonPresupuesto a {
+    text-decoration: none !important;
+}
+
+.NuestrosServicios {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 100px; /* Espacio entre los elementos */
+    text-align: center; /* Asegura que los textos estén alineados */
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el párrafo en columna */
+    align-items: center; /* Centra la imagen y el texto */
+    max-width: 300px; /* Opcional: evita que los párrafos sean demasiado anchos */
+    font-family: "Montserrat", sans-serif;}
+
+.servicios-container h3 {
+    font-size: 3.5rem;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .bienvenidos .contenedor {
+        min-height: 250px;
+        background-attachment: scroll; /* Evita problemas con imágenes fijas en móviles */
+        background-size: cover;
+    }
+
+    .bienvenidos h2 {
+        font-size: 2.5rem;
+    }
+
+    .bienvenidos .subtitulo, .bienvenidos p, .bienvenidos h3 {
+        font-size: 1.2rem;
+        margin: 20px;
+    }
+
+    .divP {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .botonPresupuesto {
+        margin: 20px auto; /* Centrar en pantallas pequeñas */
+        width: 80%;
+    }
+
+    .NuestrosServicios {
+        flex-direction: column;
+        gap: 30px; /* Reduce el espacio entre elementos */
+    }
+
+    .servicio {
+        max-width: 100%; /* Ocupa el ancho completo en móviles */
+    }
+
+    .servicios-container h3 {
+        font-size: 2rem;
+    }
+
+    .experiencia-container {
+        padding: 40px;
+        background-position: center;
+    }
+
+    .contenedor, .experiencia-container, .NuestrosServicios {
+        width: 100vw; /* Usa el 100% del viewport */
+        padding: 10px; /* Ajusta el padding */
+    }
+
+    .divP {
+        margin: 0 auto; /* Centra el contenido */
+        width: 90%;
+    }
+}
+
+
+
+

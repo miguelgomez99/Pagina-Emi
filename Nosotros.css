@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.titulo{
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.textoNosotros{
+    width: 90vw;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.imagen{
+    background-image: url(Familia.webp);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    margin: 10px;
+    width: 120vw;
+    height: 600px; 
+}
+
+.divMayor {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 50px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 15px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.botonContacto {
+    margin-left: 40%;
+    background-color: #99CC01;
+    border: 1px solid black; /* Agregué un color para que el borde sea visible */
+    padding: 0.5rem; /* Usa rem en lugar de px */
+    width: 10rem; /* Tamaño fijo en relación al texto base */
+    text-align: center; /* Asegura que el texto esté centrado */
+    cursor: pointer; /* Hace que el cursor sea de tipo botón */
+    margin-top: 10px;
+}
+
+.botonContacto:hover {
+    background-color: #D2FF4D; /* Cambia el fondo al pasar el mouse */
+}
+
+.botonContacto p:hover {
+    color: #000000; /* Cambia el color del texto */
+}
+
+.botonContacto p {
+    text-decoration: none; /* Elimina el subrayado */
+    color: rgb(255, 255, 255); /* Color del texto inicial */
+    margin: 0; /* Evita márgenes no deseados */
+}
+
+.botonContacto a {
+    text-decoration: none !important;
+}

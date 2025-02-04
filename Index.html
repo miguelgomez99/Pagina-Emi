@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="Logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Automatismos</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="Index-contacto.css">
+    <link rel="stylesheet" href="Index-ubicacion.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="whatsapp.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<div class="conteiner">
+    <div>
+        <a href="Principal.html"><img src="Imagen automatizmos.jpg" alt="Imagen programador" width="100" height="90"></a>
+    </div>
+    <div class="opciones">
+        <div class="encabezado">
+            <a href="Principal.html" class="encabezado">Home</a>
+        </div>
+        <div class="encabezado">
+            <a href="Nosotros.html" class="encabezado">Nosotros</a>
+        </div>
+        <div class="encabezado">Soluciones</div>
+        <div class="encabezado">Clientes</div>
+        <div class="encabezado">
+         <a href="Index.html" class="encabezado">Contacto</a>
+        </div>
+    </div>
+</div>
+    <div>
+
+        <div class="formulario-container">
+            <p class="titulo">Contacto</p>
+            <p class="descripcion">
+                Puede comunicarse con nosotros a través del formulario de contacto o llamando por teléfono.
+            </p>
+            <form method="post" action="https://formspree.io/f/mqakovbq" class="formulario">
+                <div class="campo">
+                    <label for="Nombre">Nombre y Apellido*</label>
+                    <input id="Nombre" type="text" name="Nombre" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="Correo">Correo</label>
+                    <input id="Correo" type="email" name="Correo" placeholder="Ingrese su correo">
+                </div>
+                <div class="campo">
+                    <label for="Telefono">Teléfono*</label>
+                    <input id="Telefono" type="tel" name="Telefono" placeholder="Ingrese su teléfono" required>
+                </div>
+                <div class="campo">
+                    <label for="Mensaje">Mensaje*</label>
+                    <textarea id="Mensaje" name="Mensaje" rows="6" placeholder="Escriba su mensaje" required></textarea>
+                </div>
+                <div class="boton-container">
+                    <input type="submit" value="Enviar" class="boton-enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="ubicacion">
+        <div class="contenidoUbicacion">
+            <h2>Nuestra ubicación</h2>
+        </div>
+        <div class="informacion">
+            <div class="telefono">
+                <p><strong>Teléfono de contacto:</strong> +54 11 5452-4372</p>
+            </div>
+            <div class="direccion">
+                <p><strong>Dirección:</strong> Colectora Oeste 651, Ingeniero Maschwitz</p>
+            </div>
+        </div>
+    <a 
+        href="https://maps.app.goo.gl/fKYUMDw8yscrrQ7q7" 
+        target="_blank" 
+        class="map-link">
+        Colectora Este Ramal Escobar, B1623 Ingeniero Maschwitz, Provincia de Buenos Aires
+    </a>
+    <br>
+    <iframe 
+        class="map-frame"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1646.1649076230774!2d-58.741079271163926!3d-34.39296197154832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f86f73fb0a9%3A0xd039015ee93b4558!2sColectora%20Este%20Ramal%20Escobar%20961%2C%20B1623%20Ingeniero%20Maschwitz%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sus!4v1734841563499!5m2!1ses!2sus" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+<div class="whatsapp-button">
+    <a href="https://wa.me/1154524372" target="_blank" title="Contáctanos por WhatsApp" onclick="ejecutar()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+</div>
+
+
+<div class="footer">
+    <div class="opcionesFooter">
+        <div class="encabezado">Soluciones</div>
+        <div class="encabezado">
+            <a href="Nosotros.html" class="encabezado">Nosotros</a>
+        </div>
+        <div class="encabezado">Clientes</div>
+        <div class="encabezado">Prensa</div>
+        <div class="encabezado">Contacto</div>    
+
+        <div class="redes">
+            <a href="https://www.instagram.com/emi.morel_oficial/"><img src="icons8-instagram-24.png" alt="Instagram" width="25" height="25" target="_blank"></a>
+            <a href="https://www.instagram.com/emi.morel_oficial/"><img src="icons8-facebook-24.png" alt="Facebook" width="25" height="25" target="_blank"></a>
+            <a href="https://wa.me/1154524372?text=Hola%20buenos%20días,%20me%20contacto%20desde%20la%20web%20para%20realizar%20una%20consulta/presupuesto."><img src="icons8-whatsapp-24.png" alt="Whatsapp" width="25" height="25" target="_blank"></a>
+        </div>   
+
+    </div>
+
+ 
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>

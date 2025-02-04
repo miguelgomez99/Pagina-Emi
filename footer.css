@@ -1,0 +1,62 @@
+.footer {
+    background-color: #0B438C;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Separa los elementos */
+    align-items: center;
+    padding: 15px 50px; /* Ajusta el espaciado */
+    box-sizing: border-box;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+        align-items: center;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .opcionesFooter {
+        font-size: 4vw;
+        text-align: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .redes {
+        justify-content: center; /* Centra las redes */
+        margin-top: 10px;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .opcionesFooter {
+        font-size: 5vw;
+    }
+
+    .redes {
+        flex-wrap: wrap; /* Permite que las redes se acomoden en varias líneas si es necesario */
+        gap: 5px;
+    }
+}
+
+.opcionesFooter {
+    display: flex;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

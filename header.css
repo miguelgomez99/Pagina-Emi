@@ -1,0 +1,111 @@
+.conteiner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #0B438C;
+    padding: 0;
+    margin: 0;
+}
+
+.encabezado {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.encabezado:hover {
+    color: #EBF20C;
+}
+
+.opciones {
+    position: relative;
+}
+
+/* Estilo del botón en pantallas grandes (ocultamos el dropdown en pantallas grandes) */
+.dropdown-btn {
+    display: none; /* No se muestra en pantallas grandes */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .conteiner {
+        height: 80px;
+    }
+
+    .encabezado {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .opciones {
+        position: absolute;
+        right: 10px;
+    }
+
+    .dropdown-btn {
+        display: block; /* Muestra el botón en pantallas pequeñas */
+        background-color: #0B438C;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown-btn:hover {
+        color: #EBF20C;
+    }
+
+    .dropdown-content {
+        display: none; /* Ocultamos las opciones por defecto */
+        position: absolute;
+        background-color: #0B438C;
+        min-width: 160px;
+        z-index: 1;
+        right: 0; /* Alineamos el menú con el botón */
+    }
+
+    .dropdown-content a, .dropdown-content .encabezado {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #EBF20C;
+    }
+
+    /* Mostrar el menú desplegable al hacer clic en el botón */
+    .dropdown-btn:focus + .dropdown-content,
+    .dropdown-content:hover {
+        display: block;
+    }
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 480px) {
+    .conteiner {
+        height: 70px;
+    }
+
+    .encabezado {
+        font-size: 10px;
+    }
+
+    .dropdown-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .dropdown-content a {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.experiencia-container {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    background-color: #9CA777;
+    background-size: cover;
+    background-position: center bottom -120px;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: "Montserrat", sans-serif;    z-index: 1; /* Para que el contenido esté por encima */
+}
+
+
+.contenido h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    padding-top: 10px;
+}
+
+.contenido p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.divP{
+    margin-left: 35rem;
+    margin-right: 35rem;
+}
+
+.contenido h1 {
+    font-size: 3.5em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.servicios-container {
+    background-color: #fffff3;
+    background-size: cover; /* Ajusta para cubrir el área */
+    background-position: center bottom; /* Posición vertical ajustada */
+    background-repeat: no-repeat; /* Sin repetición */
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 15px;
+    font-family: "Montserrat", sans-serif;    position: relative;
+}
+
+
+.NuestrosServicios {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 100px; /* Espacio entre los elementos */
+    text-align: center; /* Asegura que los textos estén alineados */
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.servicioDescripcion {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 100px; /* Espacio entre los elementos */
+    text-align: center; /* Asegura que los textos estén alineados */
+    margin: 1px 200px 1px 200px;
+    font-size: 1.4rem;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el párrafo en columna */
+    align-items: center; /* Centra la imagen y el texto */
+    max-width: 300px; /* Opcional: evita que los párrafos sean demasiado anchos */
+    font-family: "Montserrat", sans-serif;}
+
+
+.servicios-container h3 {
+    font-size: 3.5rem;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;}
+
+.botonYoutube{
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 37%;
+}
+
+.Videos {
+    display: flex;
+    padding: 20px;
+}
+
+.link{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color:#f4f4f4;
+
+}
+
+.link a{
+    color:#f4f4f4;
+}
+
+.muestraVideoClaro {
+    background-color: #bdc996;
+    width: 99vw;
+    display: flex; /* Los elementos principales están alineados en fila */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px; /* Espacio entre el video y el contenedor del texto */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+.videoContainer iframe {
+    width: 560px;
+    height: 315px;
+}
+
+.contenidoTexto {
+    display: flex;
+    flex-direction: column; /* Los elementos dentro del contenedor se colocan en columna */
+    align-items: flex-start; /* Alinea el texto al inicio */
+    justify-content: center;
+}
+
+.tituloVideo h2 {
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.textoVideo p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 500px; /* Limita el ancho del texto para que no se extienda demasiado */
+}
+
+.muestraVideoOscuro {
+    background-color: #9CA777;
+    width: 99vw;
+    display: flex; /* Los elementos principales están alineados en fila */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px; /* Espacio entre el video y el contenedor del texto */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+    
+
+
+
+
