@@ -24,8 +24,9 @@
     background-image: url(Familia.webp);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-size: cover;
+    background-position: center;
     margin: 10px;
-    width: 120vw;
+    width: 100%;
     height: 600px; 
 }
 
@@ -33,8 +34,7 @@
     background-color: #f4f4f4;
     border-radius: 8px;
     padding: 50px;
-    width: 100%;
-    max-width: 1400px;
+    width: 80%;
     margin: 15px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -67,4 +67,74 @@
 
 .botonContacto a {
     text-decoration: none !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    .titulo{
+        font-size: 2rem; /* Ajusta el tamaño en pantallas pequeñas */
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        width: 90%; /* Asegura que ocupe todo el ancho disponible */
+        text-align: center;
+    }
+    
+    .textoNosotros{
+        width: 100%;
+        font-size: 17px;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .imagen{
+        background-image: url(Familia.webp);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-size: cover;
+        width: 45vw;
+        height: 40vw; 
+        margin: 0 auto;
+    }
+    
+    .divMayor {
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        width: 70%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+    }
+    
+    .botonContacto {
+        margin-left: 0%;
+        background-color: #99CC01;
+        border: 1px solid black; /* Agregué un color para que el borde sea visible */
+        width: 10rem; /* Tamaño fijo en relación al texto base */
+        text-align: center; /* Asegura que el texto esté centrado */
+        cursor: pointer; /* Hace que el cursor sea de tipo botón */
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .botonContacto:hover {
+        background-color: #D2FF4D; /* Cambia el fondo al pasar el mouse */
+    }
+    
+    .botonContacto p:hover {
+        color: #000000; /* Cambia el color del texto */
+    }
+    
+    .botonContacto p {
+        text-decoration: none; /* Elimina el subrayado */
+        color: rgb(255, 255, 255); /* Color del texto inicial */
+        margin: 0; /* Evita márgenes no deseados */
+    }
+    
+    .botonContacto a {
+        text-decoration: none !important;
+    }
+
+    
+
+
 }
