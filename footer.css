@@ -1,5 +1,5 @@
 .footer {
-    background-color: #0B438C;
+    background-color: #093b9b;
     width: 100%;
     display: flex;
     justify-content: center; /* Separa los elementos */
@@ -62,4 +62,6 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }

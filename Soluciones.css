@@ -10,7 +10,9 @@
     color: white;
     padding-top: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-family: "Montserrat", sans-serif;    z-index: 1; /* Para que el contenido esté por encima */
+    font-family: "Montserrat", sans-serif;    
+    z-index: 1; /* Para que el contenido esté por encima */
+    width: 100%;
 }
 
 
@@ -157,6 +159,85 @@
     align-items: center; /* Centra los elementos verticalmente */
 }
 
+@media screen and (max-width: 768px) {
+    .experiencia-container {
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+
+    .contenido h1 {
+        font-size: 2.5rem; /* Reduce el tamaño del título */
+        line-height: 1.4;
+    }
+
+    .contenido h2 {
+        font-size: 1.5rem; /* Ajusta subtítulos */
+    }
+
+    .contenido p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .divP {
+        margin: 0 auto; /* Centra los elementos */
+        width: 90%; /* Limita el ancho */
+    }
+
+    .NuestrosServicios,
+    .servicioDescripcion {
+        flex-direction: column; /* Hace que los elementos se apilen */
+        gap: 30px; /* Reduce la separación */
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicio {
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+        max-width: 90%; /* Evita que los elementos sean demasiado anchos */
+    }
+
+    .servicios-container h3 {
+        font-size: 2.5rem; /* Ajusta el tamaño del título */
+    }
+
+    .botonYoutube {
+        margin-left: 0; /* Centra el botón */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Videos {
+        flex-direction: column; /* Apila los videos */
+    }
+
+    .muestraVideoClaro,
+    .muestraVideoOscuro {
+        flex-direction: column; /* Cambia la disposición en columnas */
+        align-items: center;
+        width: 100%; /* Ajusta al ancho de la pantalla */
+        gap: 5px;
+    }
+
+    .videoContainer iframe {
+        width: 90vw; /* Hace que el video se ajuste al ancho del contenedor */
+        height: 60vw; /* Mantiene la proporción */
+        
+    }
+
+    .contenidoTexto {
+        text-align: center;
+        align-items: center; /* Alinea el contenido en el centro */
+    }
+
+    .textoVideo p {
+        max-width: 100%;
+        font-size: 1.2rem; /* Reduce el tamaño del texto */
+        text-align: center;
+    }
+}
     
 
 
