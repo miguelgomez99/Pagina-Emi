@@ -17,7 +17,8 @@
     display: flex;
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
-    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .imagen{
@@ -25,6 +26,8 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-size: cover;
     background-position: center;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
     width: 100%;
     height: 600px; 
@@ -49,6 +52,7 @@
     text-align: center; /* Asegura que el texto esté centrado */
     cursor: pointer; /* Hace que el cursor sea de tipo botón */
     margin-top: 10px;
+    align-items: center;
 }
 
 .botonContacto:hover {

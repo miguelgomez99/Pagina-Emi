@@ -20,10 +20,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.35);
     z-index: -1;
+    
 }
 
 .bienvenidos h2 {
@@ -189,7 +189,9 @@
     flex-direction: column; /* Coloca la imagen y el párrafo en columna */
     align-items: center; /* Centra la imagen y el texto */
     max-width: 300px; /* Opcional: evita que los párrafos sean demasiado anchos */
-    font-family: "Montserrat", sans-serif;}
+    font-family: "Montserrat", sans-serif;
+
+}
 
 .servicios-container h3 {
     font-size: 3.5rem;
