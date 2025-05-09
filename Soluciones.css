@@ -63,9 +63,7 @@
 .servicioDescripcion {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
-    justify-content: center; /* Centra las imágenes horizontalmente */
     gap: 100px; /* Espacio entre los elementos */
-    text-align: center; /* Asegura que los textos estén alineados */
     margin: 1px 200px 1px 200px;
     font-size: 1.4rem;
 }
@@ -200,6 +198,10 @@
         margin: 10px;
         justify-content: center;
         align-items: center;
+    }
+
+    .NuestrosServicios img {
+        width: 100%;
     }
 
     .servicio {

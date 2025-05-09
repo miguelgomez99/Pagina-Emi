@@ -22,8 +22,6 @@
     align-items: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.35);
-    z-index: -1;
-    
 }
 
 .bienvenidos h1 {
@@ -210,6 +208,11 @@
     margin-bottom: 3.5rem;
 }
 
+.contenidoUbicacion h2{
+     font-weight: bold;
+     padding-top: 1rem;
+}
+
 @media screen and (max-width: 768px) {
     * {
         box-sizing: border-box; /* Asegura que el padding y los bordes no se sumen al ancho total */
@@ -293,16 +296,15 @@
     }
 
     .bienvenidos .contenedor {
-        height: 40vh;
-        min-width: 40vh;
+        height: auto;
         background-size: cover;
         width: 100%;
-        margin: 0;
+        padding-top: 2rem;
         background-attachment: inherit;
     }
 
     .bienvenidos h1{
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: 0.2rem;
         word-wrap: break-word;
     }
@@ -340,8 +342,8 @@
 
     .servicio {
         width: 85%;
-        max-width: 90%; /* Ajuste para centrar mejor los elementos */
-        margin: 0 auto; /* Centra los elementos */
+        max-width: 90%; 
+        margin: 0 auto; 
     }
 
 
@@ -363,8 +365,9 @@
 
     .experiencia-container h2{
         font-size: 1.7rem;
-        margin: 15px;
         word-wrap: break-word;
+        text-align: left;
+        margin-bottom: 1.5rem;
     }
 
     .contenedor, .experiencia-container, .servicios-container{

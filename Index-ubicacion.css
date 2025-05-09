@@ -12,13 +12,14 @@
 
 .ubicacion h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  padding-top: 1rem;
 }
 
 .contenidoUbicacion {
   position: relative;
   left: 0 auto;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
