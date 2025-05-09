@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
       dropdownContent.classList.toggle("active");
   });
 
-  // Cerrar menú si se hace clic fuera
   document.addEventListener("click", function (event) {
       if (!dropdownBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
           dropdownContent.classList.remove("active");

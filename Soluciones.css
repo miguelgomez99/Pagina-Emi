@@ -122,7 +122,7 @@
 
 .muestraVideoClaro {
     background-color: #DDDDDD;
-    width: 99vw;
+    width: 100vw;
     display: flex; /* Los elementos principales están alineados en fila */
     padding-top: 20px;
     padding-bottom: 20px;
@@ -159,7 +159,7 @@
 
 .muestraVideoOscuro {
     background-color: #EEEEEE;
-    width: 99vw;
+    width: 100vw;
     display: flex; /* Los elementos principales están alineados en fila */
     padding-top: 20px;
     padding-bottom: 20px;

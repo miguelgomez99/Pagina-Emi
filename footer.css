@@ -1,67 +1,66 @@
 .footer {
-    background-color: #093b9b;
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Separa los elementos */
-    align-items: center;
-    padding: 15px 50px; /* Ajusta el espaciado */
-    box-sizing: border-box;
-    align-items: center;
-}
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column; /* Apila los elementos en pantallas pequeñas */
-        align-items: center;
-        height: auto;
-        padding: 10px 20px;
-    }
-
-    .opcionesFooter {
-        font-size: 4vw;
-        text-align: center;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .redes {
-        justify-content: center; /* Centra las redes */
-        margin-top: 10px;
-    }
-}
-
-/* Ajustes para pantallas muy pequeñas */
-@media (max-width: 480px) {
-    .footer {
-        padding: 10px;
-        font-size: 10vw;
-    }
-
-    .opcionesFooter {
-        font-size: 10vw;
-    }
-
-    .redes {
-        flex-wrap: wrap; /* Permite que las redes se acomoden en varias líneas si es necesario */
-        gap: 5px;
-    }
+  background-color: #093b9b;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 10px 20px;
 }
 
 .opcionesFooter {
-    display: flex;
-    gap: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 2vw;
-    font-weight: bold;
-    color: white;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 .redes {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .opcionesFooter {
+    font-size: 1.1rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .opcionesFooter {
+    font-size: 1rem;
+  }
+
+  .redes {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .redes img {
+    height: 2em;
+    width: 2em;
+  }
+}
+
+/* Recomendado para evitar scroll lateral en móviles */
+body {
+  overflow-x: hidden;
 }
