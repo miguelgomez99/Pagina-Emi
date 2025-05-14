@@ -21,6 +21,11 @@
     margin-right: 5%;
 }
 
+.textoNosotros p {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
 .imagen{
     background-image: url(public/assets/Familia.webp);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -93,8 +98,8 @@
         background-image: url(public/assets/Familia.webp);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         background-size: cover;
-        width: 45vw;
-        height: 40vw; 
+        width: 70vw;
+        height: 70vw; 
         margin: 0 auto;
     }
     
@@ -114,7 +119,7 @@
         width: 10rem; /* Tamaño fijo en relación al texto base */
         text-align: center; /* Asegura que el texto esté centrado */
         cursor: pointer; /* Hace que el cursor sea de tipo botón */
-        margin-top: 10px;
+        margin-top: 1px;
         justify-content: center;
         align-items: center;
         text-align: center;

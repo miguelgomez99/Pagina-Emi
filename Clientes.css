@@ -30,6 +30,10 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+.mx-4{
+  height: 100px;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
