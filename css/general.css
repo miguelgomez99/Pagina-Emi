@@ -1,0 +1,14 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #F0F2EF;
+}
+
+.titulos {
+    font-family: Verdana;
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+    background-color: blueviolet;
+    text-align: center;
+}
+

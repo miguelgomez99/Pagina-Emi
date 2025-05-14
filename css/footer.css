@@ -1,0 +1,66 @@
+.footer {
+  background-color: #093b9b;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+.opcionesFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .opcionesFooter {
+    font-size: 1.1rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .opcionesFooter {
+    font-size: 1rem;
+  }
+
+  .redes {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .redes img {
+    height: 2em;
+    width: 2em;
+  }
+}
+
+/* Recomendado para evitar scroll lateral en móviles */
+body {
+  overflow-x: hidden;
+}
