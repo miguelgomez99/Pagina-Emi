@@ -207,9 +207,9 @@
   padding-top: 1.5rem;
 }
 
-.contenidoUbicacion h2 {
-  font-weight: bold;
-  padding-top: 1rem;
+.comentarios{
+  padding: 2rem;
+  background: #F0F2EF;
 }
 
 @media screen and (max-width: 768px) {
