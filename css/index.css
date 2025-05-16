@@ -24,7 +24,8 @@
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-.bienvenidos h1,.bienvenidos h2 {
+.bienvenidos h1,
+.bienvenidos h2 {
   font-size: 3.7rem;
   color: #ffffff;
   text-align: center;
@@ -96,7 +97,7 @@
   background-repeat: no-repeat;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  padding: 60px 120px 120px 120px;
+  padding: 60px 120px 60px 120px;
   font-family: "Montserrat", sans-serif;
   z-index: 1;
 }
@@ -207,9 +208,9 @@
   padding-top: 1.5rem;
 }
 
-.comentarios{
+.comentarios {
   padding: 2rem;
-  background: #F0F2EF;
+  background: #f0f2ef;
 }
 
 @media screen and (max-width: 768px) {
@@ -226,14 +227,13 @@
     background-attachment: inherit;
   }
 
-  .bienvenidos h1,.bienvenidos h2 {
+  .bienvenidos h1,
+  .bienvenidos h2 {
     font-size: 2.5rem;
-    margin: 0;
   }
 
   .bienvenidos h3 {
     font-size: 2rem;
-    margin: 0;
   }
 
   .bienvenidos p,
@@ -304,10 +304,12 @@
     background-attachment: inherit;
   }
 
-  .bienvenidos h1,.bienvenidos h2 {
+  .bienvenidos h1,
+  .bienvenidos h2 {
     font-size: 1.8rem;
     margin-top: 0.2rem;
     word-wrap: break-word;
+    margin-bottom: -1rem;
   }
 
   .bienvenidos h3 {
