@@ -16,14 +16,52 @@
 
 .carousel-track img {
   display: inline-block;
-  max-height: 80px;
-  height: auto;
+  max-height: 100px;
+  height: 7rem;
   width: auto;
   max-width: 100%;
   margin: 0 1rem;
 }
 
-h1 {
+.carousel-track img:hover {
+  transform: scale(1.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 200px));
+  grid-template-rows: repeat(3, auto);
+  gap: 0.5rem;
+  padding: 2rem;
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+.clientes-texto {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+}
+
+.clientes-grid img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clientes-grid img:hover {
+  transform: scale(1.05);
+}
+
+h1,h2 {
   font-size: 3rem;
   color: #000000;
   text-align: center;
@@ -31,7 +69,7 @@ h1 {
 }
 
 .mx-4{
-  height: 100px;
+  height: 200px;
 }
 
 @keyframes scroll {
